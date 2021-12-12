@@ -10,20 +10,20 @@
 	display:grid;
 	grid-template-columns: repeat(var(--num-columnas), var(--size));
 	grid-template-rows: repeat(var(--num-filas), var(--size));
-	background-color: #BBBBBB;
-	border-left: 2px solid #D3D3D3;
-	border-top: 2px solid #D3D3D3;
-	border-right: 2px solid #A9A9A9;
+	background-color: #0833A2;
+	border-left: 2px solid #0833A9;
+	border-top: 2px solid #0854A4;
+	border-right: 2px solid #0844A1;
 	/* border-bottom: 2px solid #A9A9A9; */
 	width: calc(var(--num-columnas)*var(--size));
 }
 
 #tablero div{
-	background-color: #BBBBBB;
-	border-left: 2px solid #D3D3D3;
-	border-top: 2px solid #D3D3D3;
-	border-right: 2px solid #A9A9A9;
-	border-bottom: 2px solid #A9A9A9;
+	background-color: #0814a2;
+	border-left: 2px solid #0852a2;
+	border-top: 2px solid #0852a2;
+	border-right: 2px solid #0871a2;
+	border-bottom: 2px solid #0871a2;
 	text-align: center;
 	line-height: var(--size);
 }
@@ -32,28 +32,28 @@
 #tablero div.destapado{
 	font-family: "Lucida Console","Courier New", Courier, monospace;
 	font-weight: bold;
-	border-left: 1px solid #A9A9A9;
-	border-top: 1px solid #A9A9A9;
-	border-right: 1px solid #D3D3D3;
-	border-bottom: 1px solid #D3D3D3;
-	text-shadow: 1px 1px 2px #999999;
+	border-left: 1px solid #0852a2;
+	border-top: 1px solid #0852a2;
+	border-right: 1px solid #0c4ef7;
+	border-bottom: 1px solid #0c4ef7;
+	text-shadow: 1px 1px 2px #04184d;
 }
 #tablero div.sinmarcar{
 	background-color: #FF0000;
 }
 #tablero div.banderaErronea{
-	background-color: #AAAAAA;
+	background-color: #0871a2;
 	border: 1px solid #B22222;
 }
 
 #estado{
 	padding: 2px 10px 2px 10px;
 	display:block;
-	background-color: #BBBBBB;
-	border-left: 2px solid #D3D3D3;
+	background-color: #0844A1;
+	border-left: 2px solid #0c4ef7;
 	/* border-top: 2px solid #D3D3D3; */
-	border-right: 2px solid #A9A9A9;
-	border-bottom: 2px solid #A9A9A9;
+	border-right: 2px solid #0852a2;
+	border-bottom: 2px solid #0852a2;
 	width: calc(var(--num-columnas)*var(--size));
 }
 #estado div{
@@ -61,10 +61,10 @@
 	font-family: sans-serif;
 	font-size: 14px;
 	color: #333333;
-	border-left: 1px solid #A9A9A9;
-	border-top: 1px solid #A9A9A9;
-	border-right: 1px solid #D3D3D3;
-	border-bottom: 1px solid #D3D3D3;
+	border-left: 1px solid #0852a2;
+	border-top: 1px solid #0871a2;
+	border-right: 1px solid #0c4ef7;
+	border-bottom: 1px solid #0c4ef7;
 	padding: 4px;
 }
 

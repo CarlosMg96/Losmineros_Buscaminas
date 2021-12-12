@@ -1,9 +1,28 @@
 
+//Declaramos las variables traidas del index 
+//var numColumnas = document.getElementById("id_col").value;
+//var numFilas = document.getElementById("id_row").value;    
+
+
+function inicio(){
+    buscaminas.numColumnas = document.getElementById("id_col").value;
+    buscaminas.numFilas = document.getElementById("id_row").value; 
+    buscaminas.numMinasTotales = 12;
+    pintarTablero();
+    generarCampoMinasVacio();
+    esparcirMinas();
+    contarMinas();
+    actualizarNumMinasRestantes();
+}
+
+window.onload = inicio;
+
 const buscaminas = {
-    numMinasTotales: 30,
+    numMinasTotales: 12,
     numMinasEncontradas: 0,
-    numFilas: 15,
-    numColumnas: 15,
+    numFilas: 7,
+    numColumnas: 7,
+ 
     aCampoMinas: []
 }
 
@@ -14,6 +33,8 @@ function pintarTablero(){
     //actualizamos las variables CSS con las variables JavaScript
     document.querySelector("html").style.setProperty("--num-filas",buscaminas.numFilas);
     document.querySelector("html").style.setProperty("--num-columnas",buscaminas.numColumnas);
+
+    
 
     //borramos el tablero actual
     while (tablero.firstChild) {
@@ -269,15 +290,30 @@ function actualizarNumMinasRestantes(){
         (buscaminas.numMinasTotales - buscaminas.numMinasEncontradas);
 }
 
-function inicio(){
-    buscaminas.numFilas = 10;
-    buscaminas.numColumnas = 10;
-    buscaminas.numMinasTotales = 12;
-    pintarTablero();
-    generarCampoMinasVacio();
-    esparcirMinas();
-    contarMinas();
-    actualizarNumMinasRestantes();
-}
 
-window.onload = inicio;
+
+function tabla(){
+    //Declaración de variables
+    var nCol = document.getElementById("id_col").value;
+    var nRow = document.getElementById("id_row").value;    
+    //Total de columnas y filas
+    var total = nCol*nRow;
+    //Generación de tabla ciclo for 
+    document.write("<table border= '2'>");
+    //for filas
+    for (var x = 0; x<nRow; x++){
+        document.write("<tr>");
+        //for columnas
+        for(var y = 0; y<nCol; y++){
+            document.write("<td>");
+            document.write("•");
+            total--;
+            //finaliza col
+            document.write("</td>")
+        }
+        //finaliza row
+        document.write("</tr>");
+    }
+    document.write("</table>");
+    }
+    
