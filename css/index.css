@@ -30,11 +30,11 @@
 
 #tablero div{
 	display: grid;
-	background-color: #0814a2;
-	border-left: 2px solid #0871a2;
-	border-top: 2px solid #0871a2;
-	border-right: 2px solid #0871a2;
-	border-bottom: 2px solid #0871a2;
+	background-color: #0071bc;
+	border-left: 2px solid #00c3f8;
+	border-top: 2px solid #2473ac;
+	border-right: 2px solid #2473ac;
+	border-bottom: 2px solid #00c3f8;
 	text-align: center;
 	line-height: var(--size);
 }
@@ -43,13 +43,13 @@
 #tablero div.destapado{
 	font-family: "Lucida Console","Courier New", Courier, monospace;
 	font-weight: bold;
-	text-shadow: 1px 1px 2px #04184d;
+	text-shadow: 1px 1px 2px #0833A2;
 }
 #tablero div.sinmarcar{
 	background-color: #FF0000;
 }
 #tablero div.banderaErronea{
-	background-color: #0871a2;
+	background-color: #3b83bd;
 	border: 1px solid #B22222;
 }
 
@@ -80,7 +80,7 @@
 #tablero div.c5{ color: #ccff00;}
 #tablero div.c6{ color: #ffcc00;}
 #tablero div.c7{ color: #ff3300;}
-#tablero div.c8{ color: #660000;}
+#tablero div.c8{ color: #FFFFFF;}
 
 
 @font-face {
